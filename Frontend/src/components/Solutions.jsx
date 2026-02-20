@@ -61,12 +61,12 @@ const cardVariants = {
 
 const Solutions = () => {
   return (
-    <section className="py-24 bg-[#fcfcfc] relative overflow-hidden font-sans">
+    <section className="py-24 bg-[#050505] relative overflow-hidden font-sans">
       
-      {/* Subtle Background Decorative Elements */}
+      {/* Dynamic Background Glows */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute -top-[20%] -right-[10%] w-[50%] h-[50%] rounded-full bg-red-50/50 blur-3xl" />
-        <div className="absolute bottom-[10%] -left-[10%] w-[40%] h-[40%] rounded-full bg-orange-50/50 blur-3xl" />
+        <div className="absolute top-[10%] right-[5%] w-[40%] h-[40%] rounded-full bg-orange-600/10 blur-[120px]" />
+        <div className="absolute bottom-[10%] left-[5%] w-[40%] h-[40%] rounded-full bg-orange-900/10 blur-[120px]" />
       </div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
@@ -78,7 +78,7 @@ const Solutions = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
-            className="text-3xl md:text-4xl lg:text-[40px] font-bold text-gray-900 tracking-tight"
+            className="text-3xl md:text-4xl lg:text-[40px] font-black text-white tracking-tight"
           >
             Your End-to-End Overseas Education Solution
           </motion.h2>
@@ -87,7 +87,7 @@ const Solutions = () => {
             whileInView={{ scaleX: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="w-24 h-1 bg-red-600 mx-auto mt-6 rounded-full"
+            className="w-24 h-1 bg-orange-600 mx-auto mt-6 rounded-full shadow-[0_0_15px_rgba(234,88,12,0.5)]"
           />
         </div>
 
@@ -103,25 +103,28 @@ const Solutions = () => {
             <motion.div 
               key={index}
               variants={cardVariants}
-              whileHover={{ y: -8 }}
-              className="group relative bg-white p-8 rounded-2xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_40px_-10px_rgba(0,0,0,0.08)] transition-all duration-300 border border-gray-100/80"
+              whileHover={{ y: -10, scale: 1.02 }}
+              className="group relative bg-[#0f0f0f] p-8 rounded-2xl border border-white/5 hover:border-orange-500/50 transition-all duration-300 shadow-2xl"
             >
-              {/* Top Accent Line that expands on hover */}
-              <div className="absolute top-0 left-0 w-0 h-1 bg-red-600 rounded-tl-2xl group-hover:w-full transition-all duration-500 ease-out" />
+              {/* Subtle Gradient Glow on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl" />
 
-              {/* Icon Container - Color flips on hover */}
-              <div className="w-14 h-14 rounded-xl bg-red-50 text-red-600 flex items-center justify-center mb-6 group-hover:bg-red-600 group-hover:text-white transition-colors duration-300">
+              {/* Icon Container - High Contrast Orange */}
+              <div className="w-16 h-16 rounded-2xl bg-orange-600/10 text-orange-500 flex items-center justify-center mb-6 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 shadow-[0_0_20px_rgba(234,88,12,0.1)] group-hover:shadow-[0_0_30px_rgba(234,88,12,0.4)]">
                 {item.icon}
               </div>
 
               {/* Content */}
-              <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300">
+              <h3 className="text-xl font-bold text-white mb-4 group-hover:text-orange-50 transition-colors duration-300">
                 {item.title}
               </h3>
               
-              <p className="text-gray-600 leading-relaxed text-[15px]">
+              <p className="text-gray-400 leading-relaxed text-[15px] group-hover:text-gray-300">
                 {item.description}
               </p>
+
+              {/* Bottom Decorative Line */}
+              <div className="mt-6 w-8 h-1 bg-orange-600/30 group-hover:w-full group-hover:bg-orange-600 transition-all duration-500 rounded-full" />
             </motion.div>
           ))}
         </motion.div>
