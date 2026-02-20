@@ -25,7 +25,8 @@ const admissionOptions = [
 
 const Admissions = () => {
   return (
-    <section className="min-h-screen bg-[#0a0a0a] py-24 px-6 lg:px-12 flex flex-col items-center justify-center font-sans overflow-hidden relative">
+    // FIX: Replaced py-24 with specific pt/pb values to perfectly clear the fixed Header
+    <section className="min-h-screen bg-[#0a0a0a] pt-[40px] lg:pt-[50px] pb-24 px-6 lg:px-12 flex flex-col items-center justify-center font-sans overflow-hidden relative">
       
       {/* Ambient Background Glows */}
       <div className="absolute top-1/4 -left-20 w-96 h-96 bg-orange-600/10 blur-[120px] rounded-full pointer-events-none" />
@@ -38,7 +39,7 @@ const Admissions = () => {
           <motion.h4 
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="text-orange-500 font-bold tracking-[0.3em] uppercase text-sm mb-4"
+            className="text-orange-500 font-bold tracking-[0.3em] uppercase text-sm "
           >
             Your Academic Path
           </motion.h4>

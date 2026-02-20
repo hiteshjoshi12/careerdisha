@@ -56,7 +56,7 @@ const Hero = () => {
           </motion.div>
 
           {/* Content Container */}
-          <div className="relative h-full w-full flex flex-col justify-center items-center text-center px-6 z-20">
+          <div className="relative h-full w-full flex flex-col justify-center items-center text-center px-6 z-20 pt-[80px] lg:pt-[116px]">
             
             {/* Subheading - Now Brand Orange */}
             <motion.h3

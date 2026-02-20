@@ -14,7 +14,7 @@ const LandingPage = () => {
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white flex flex-col font-sans">
       <Header />
-      <main className="flex-grow">
+      <main className="flex-grow">  {/* <--- Padding removed here */}
         <Hero />
         <Solutions />
       </main>
@@ -23,12 +23,11 @@ const LandingPage = () => {
   );
 };
 
-// 2. Admissions Page Wrapper (Maintains Header/Footer)
 const AdmissionsPage = () => {
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white flex flex-col font-sans">
       <Header />
-      <main className="flex-grow">
+      <main className="flex-grow"> {/* <--- Padding removed here */}
         <Admissions />
       </main>
       <Footer />
