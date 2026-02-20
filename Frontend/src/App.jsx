@@ -9,6 +9,7 @@ import Footer from './Footer';
 import Profiling from './components/Profiling';
 import Admissions from './components/Admissions';
 import TravelBooking from './components/TravelBooking';
+import WhatsAppWidget from './components/WhatsAppWidget';
 
 // 1. Landing Page Wrapper
 const LandingPage = () => {
@@ -52,6 +53,7 @@ const TravelPage = () => {
 function App() {
   return (
     <Router>
+      <WhatsAppWidget />
       <Routes>
         {/* Main Home Route */}
         <Route path="/" element={<LandingPage />} />
