@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight} from 'lucide-react';
 
 // Using your local paths
 import image1 from '../assets/hero-bg-1.png'; 
 import image2 from '../assets/hero-bg-2.png'; 
+import { Link } from 'react-router-dom';
 
 const slides = [
   {
@@ -79,6 +80,7 @@ const Hero = () => {
             </motion.h1>
 
             {/* Primary Action Button - Orange Theme */}
+            <Link to={"/profiling"}>
             <motion.div
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -88,6 +90,7 @@ const Hero = () => {
                 Let's Get Started
               </button>
             </motion.div>
+              </Link>
 
           </div>
         </motion.div>

@@ -8,6 +8,7 @@ import Solutions from './components/Solutions';
 import Footer from './Footer'; 
 import Profiling from './components/Profiling';
 import Admissions from './components/Admissions';
+import TravelBooking from './components/TravelBooking';
 
 // 1. Landing Page Wrapper
 const LandingPage = () => {
@@ -35,6 +36,18 @@ const AdmissionsPage = () => {
   );
 };
 
+const TravelPage = () => {
+  return (
+    <div className="min-h-screen bg-[#0a0a0a] text-white flex flex-col font-sans">
+      <Header />
+      <main className="flex-grow pt-[2px] lg:pt-[1px]">
+        <TravelBooking />
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
 // 3. Main Router Setup
 function App() {
   return (
@@ -48,6 +61,8 @@ function App() {
 
         {/* Profiling Route (Standalone Dashboard Layout) */}
         <Route path="/profiling" element={<Profiling />} />
+
+        <Route path="/travel" element={<TravelPage />} />
       </Routes>
     </Router>
   );

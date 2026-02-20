@@ -66,7 +66,7 @@ const Header = ({ showDashboardButtons = false }) => {
                   className="absolute top-[85%] left-0 w-60 bg-[#111111] shadow-2xl rounded-xl py-3 border border-gray-800"
                 >
                   {['Flights Booking', 'Hotels Booking', 'Abroad Accommodation'].map((item) => (
-                    <a key={item} href="#" className="block px-6 py-2.5 text-gray-400 hover:bg-orange-600/10 hover:text-orange-500 transition-colors text-[13px]">
+                    <a key={item} href="/travel" className="block px-6 py-2.5 text-gray-400 hover:bg-orange-600/10 hover:text-orange-500 transition-colors text-[13px]">
                       {item}
                     </a>
                   ))}
@@ -93,13 +93,16 @@ const Header = ({ showDashboardButtons = false }) => {
                 </button>
               </>
             ) : (
+              <Link to="/profiling">
+
               <motion.button 
                 whileHover={{ scale: 1.03, backgroundColor: "#ea580c" }}
                 whileTap={{ scale: 0.97 }}
-                className="bg-orange-600 text-white px-8 py-3 rounded-md font-bold text-sm transition-all shadow-lg shadow-orange-900/20 uppercase tracking-widest"
-              >
+                className="bg-orange-600 cursor-pointer text-white px-8 py-3 rounded-md font-bold text-sm transition-all shadow-lg shadow-orange-900/20 uppercase tracking-widest"
+                >
                 Let's Get Started
               </motion.button>
+                </Link>
             )}
           </div>
         </div>
@@ -138,8 +141,9 @@ const Header = ({ showDashboardButtons = false }) => {
                 <div className="space-y-4">
                   <p className="text-xs uppercase text-gray-500 tracking-widest font-black">Travel Arrangements</p>
                   <div className="flex flex-col gap-3 pl-4 border-l-2 border-orange-600">
-                    <a href="#" className="text-base font-medium">Flights Booking</a>
-                    <a href="#" className="text-base font-medium">Hotels Booking</a>
+                    <a href="/travel" className="text-base font-medium">Flights Booking</a>
+                    <a href="/travel" className="text-base font-medium">Hotels Booking</a>
+                    <a href="/travel" className="text-base font-medium">Abroad Accommodation</a>
                   </div>
                 </div>
                 <Link to="/admissions" onClick={() => setIsMobileMenuOpen(false)}>India & Overseas Admissions</Link>
