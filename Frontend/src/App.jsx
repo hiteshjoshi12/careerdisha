@@ -10,6 +10,11 @@ import Profiling from './components/Profiling';
 import Admissions from './components/Admissions';
 import TravelBooking from './components/TravelBooking';
 import WhatsAppWidget from './components/WhatsAppWidget';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import TermsOfService from './components/TermsOfService';
+import ScrollToTop from './components/ScrollToTop';
+import Login from './components/Login';
+import Register from './components/Register';
 
 // 1. Landing Page Wrapper
 const LandingPage = () => {
@@ -53,6 +58,7 @@ const TravelPage = () => {
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <WhatsAppWidget />
       <Routes>
         {/* Main Home Route */}
@@ -65,6 +71,11 @@ function App() {
         <Route path="/profiling" element={<Profiling />} />
 
         <Route path="/travel" element={<TravelPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        
       </Routes>
     </Router>
   );

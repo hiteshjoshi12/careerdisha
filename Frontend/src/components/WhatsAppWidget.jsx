@@ -11,15 +11,7 @@ const WhatsAppWidget = () => {
   return (
     <div className="fixed bottom-6 right-6 z-[100] flex flex-col items-end gap-3 pointer-events-none">
       
-      {/* Tooltip (Only shows on desktop hover) */}
-      <motion.div 
-        initial={{ opacity: 0, y: 10, scale: 0.9 }}
-        whileInView={{ opacity: 1, y: 0, scale: 1 }}
-        transition={{ delay: 1 }}
-        className="hidden md:block bg-[#111] border border-gray-800 text-gray-300 text-xs font-bold px-4 py-2 rounded-xl shadow-2xl tracking-widest uppercase pointer-events-auto"
-      >
-        Chat with us <span className="text-orange-500">👋</span>
-      </motion.div>
+     
 
       {/* Floating Action Button */}
       <motion.a
