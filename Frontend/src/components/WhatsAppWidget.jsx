@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const WhatsAppWidget = () => {
   // Replace with your actual WhatsApp number (include country code, omit +)
-  const phoneNumber = "918305231137"; 
+  const phoneNumber = "917224954335"; 
   const defaultMessage = "Hello! I would like to know more about Career Disha's services.";
   
   const waLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(defaultMessage)}`;

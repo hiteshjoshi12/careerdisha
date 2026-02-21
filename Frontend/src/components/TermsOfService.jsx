@@ -116,7 +116,7 @@ const TermsOfService = () => {
               <div>
                 <p className="text-white font-black uppercase tracking-widest text-sm mb-2">General Inquiries</p>
                 <a href="mailto:careerdisha@edumilestone.com" className="text-orange-500 hover:text-orange-400 font-medium block mb-1 transition-colors">careerdisha@edumilestone.com</a>
-                <p className="text-gray-400">+91 8305231137</p>
+                <p className="text-gray-400">+91 7224954335</p>
               </div>
             </div>
           </section>

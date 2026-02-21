@@ -106,7 +106,7 @@ const PrivacyPolicy = () => {
             <div className="bg-[#111] p-6 rounded-xl border border-gray-800 inline-block">
               <p className="text-white font-bold mb-2">Career Disha</p>
               <p className="text-gray-400">Email: <a href="mailto:careerdisha@edumilestone.com" className="text-orange-500 hover:underline">careerdisha@edumilestone.com</a></p>
-              <p className="text-gray-400 mt-1">Phone: +91 8305231137</p>
+              <p className="text-gray-400 mt-1">Phone: +91 7224954335</p>
             </div>
           </section>
 

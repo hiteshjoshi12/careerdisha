@@ -21,10 +21,10 @@ const Header = ({ showDashboardButtons = false }) => {
           careerdisha@edumilestone.com
         </a>
         <a
-          href="tel:8305231137"
+          href="tel:7224954335"
           className="flex items-center gap-2 hover:text-orange-500 transition-colors"
         >
-          <Phone size={12} className="text-orange-500" /> +91 8305231137
+          <Phone size={12} className="text-orange-500" /> +91 7224954335
         </a>
       </div>
 

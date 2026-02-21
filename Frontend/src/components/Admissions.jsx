@@ -80,11 +80,6 @@ const Admissions = () => {
                 {option.description}
               </p>
 
-              {/* Button Action */}
-              <div className="mt-auto flex items-center gap-2 text-orange-500 font-bold text-xs uppercase tracking-widest opacity-60 group-hover:opacity-100 group-hover:gap-4 transition-all">
-                Explore Now <ArrowRight size={14} />
-              </div>
-
               {/* Bottom Glow bar */}
               <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-1 bg-orange-600 rounded-full group-hover:w-[80%] transition-all duration-500 shadow-[0_0_15px_rgba(234,88,12,1)]" />
             </motion.div>
