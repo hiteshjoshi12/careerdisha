@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-// Import all your components
+
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Solutions from './components/Solutions';
@@ -15,6 +15,8 @@ import TermsOfService from './components/TermsOfService';
 import ScrollToTop from './components/ScrollToTop';
 import Login from './components/Login';
 import Register from './components/Register';
+import Colleges from './components/Colleges';
+import MetaPixelTracker from './components/MetaPixelTracker';
 
 // 1. Landing Page Wrapper
 const LandingPage = () => {
@@ -58,6 +60,7 @@ const TravelPage = () => {
 function App() {
   return (
     <Router>
+      <MetaPixelTracker />
       <ScrollToTop />
       <WhatsAppWidget />
       <Routes>
@@ -69,6 +72,8 @@ function App() {
 
         {/* Profiling Route (Standalone Dashboard Layout) */}
         <Route path="/profiling" element={<Profiling />} />
+        {/* 2. Add the NEW Route here */}
+  <Route path="/colleges" element={<Colleges />} />
 
         <Route path="/travel" element={<TravelPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
